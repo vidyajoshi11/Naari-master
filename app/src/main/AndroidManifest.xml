@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SENSOR_ACCELEROMETER" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddRelative"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".helplineCall"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".DeveloperByActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".HowToSwipe"
+            android:theme="@style/Theme.AppCompat.Light"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Swapping"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Record"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ViewListContents"
+            android:theme="@style/Theme.AppCompat.Light" />
+    </application>
+
+</manifest>
